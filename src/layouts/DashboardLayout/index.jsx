@@ -1,0 +1,2 @@
+import { useState } from 'react'; import { Outlet } from 'react-router-dom'; import Navbar from '../../components/Navbar'; import Sidebar from '../../components/Sidebar'; import styles from './styles.module.css';
+export default function DashboardLayout(){const[open,setOpen]=useState(false);return <div className={styles.layout}><Sidebar open={open} onClose={()=>setOpen(false)}/><div className={styles.main}><Navbar onMenu={()=>setOpen(true)}/><div className={styles.page}><Outlet/></div></div></div>}
