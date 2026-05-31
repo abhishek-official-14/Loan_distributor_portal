@@ -1,0 +1,1 @@
+.page{min-height:100vh;display:grid;place-content:center;text-align:center;background:var(--bg)}.page h1{font-size:90px;color:#635bff;margin:0}.page h2{margin:0}.page p{color:var(--muted)}.page a{justify-self:center;text-decoration:none;color:white;background:linear-gradient(135deg,#635bff,#4a8bff);padding:11px 17px;border-radius:10px;font-size:13px;font-weight:700}

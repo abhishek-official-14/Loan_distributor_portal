@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion'; import styles from './styles.module.css';
+export default function StatCard({label,value,change,icon:Icon,tone='violet'}){return <motion.article className={styles.card} initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} whileHover={{y:-4}}><div className={`${styles.icon} ${styles[tone]}`}><Icon size={19}/></div><span>{label}</span><strong>{value}</strong><small>{change}</small></motion.article>}
